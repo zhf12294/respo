@@ -1,0 +1,23 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 1
+feign:
+  hystrix:
+    enabled: false
+mybatis:
+  type-aliases-package: com.jk.model
+server:
+  port: 8084
+spring:
+  application:
+    name: service-feign
+  main:
+    allow-bean-definition-overriding: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
