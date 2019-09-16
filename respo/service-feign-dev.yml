@@ -9,7 +9,7 @@ feign:
   hystrix:
     enabled: false
 mybatis:
-  type-aliases-package: com.jk.model
+  type-aliases-package: com.jk.zhf.model
 server:
   port: 8084
 spring:
@@ -21,3 +21,9 @@ spring:
     cache: false
     prefix: classpath:/templates/
     suffix: .html
+elasticsearch:
+  clusterName: my-application
+  firstPort: 9300
+  ip: 127.0.0.1
+  secondPort: 9301
+  thirdPort: 9302
